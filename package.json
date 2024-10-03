@@ -1,0 +1,36 @@
+{
+  "name": "vef1-2024-v5-synilausn",
+  "version": "1.0.0",
+  "description": "verkefni 6 i vefforitun",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "browser-sync start --server --files \"styles/css/*.css\"",
+    "build": "echo \"drasl\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "stylelint \"styles/scss/*.scss\"",
+    "sass": "sass --watch --update --style=expanded styles/scss:styles/css",
+    "sass-prod": "sass --no-source-map --style=compressed styles/scss:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EinarHKvaran/vef1-2024-v5-synilausn.git"
+  },
+  "keywords": [
+    "skolaverkefni"
+  ],
+  "author": "EinarHKvaran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EinarHKvaran/vef1-2024-v5-synilausn/issues"
+  },
+  "homepage": "https://github.com/EinarHKvaran/vef1-2024-v5-synilausn#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.0.1",
+    "sass": "^1.79.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
